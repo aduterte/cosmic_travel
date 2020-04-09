@@ -1,0 +1,3 @@
+<% @scientists.each do |s| %>
+   <div class="scientist_name"><%= link_to s.name, scientist_path(s) %></div>
+<% end %>

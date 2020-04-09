@@ -1,0 +1,10 @@
+<h3><%= @scientist.name %></h3>
+<h4><%= @scientist.field_of_study %></h4>
+<% @scientist.planets.each do |p| %>
+<div class="planet_name"><%= p.name %></div>
+<% end %>
+<div>
+<%= link_to "Edit", edit_scientist_path(@scientist) %>
+<%= link_to "Delete", scientist_path(@scientist), :method => :delete %>
+
+</div>
